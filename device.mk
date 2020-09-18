@@ -166,3 +166,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
+# Binder
+PRODUCT_PACKAGES += \
+    libhwbinder \
+    libhwbinder.vendor \
+    libhidltransport
