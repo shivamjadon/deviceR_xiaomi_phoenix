@@ -36,6 +36,12 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Privapp Whitelist
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-phoenix.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-phoenix.xml \
+    $(LOCAL_PATH)/configs/privapp-permissions-phoenix.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-phoenix.xml \
+    $(LOCAL_PATH)/configs/privapp-permissions-phoenix.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-phoenix.xml
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService
