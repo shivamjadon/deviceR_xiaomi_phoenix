@@ -42,6 +42,22 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-phoenix.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-phoenix.xml \
     $(LOCAL_PATH)/configs/privapp-permissions-phoenix.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-phoenix.xml
 
+YOUR_HW_PLATFORM := sm8150
+
+# Hardware
+PRODUCT_BOARD_PLATFORM := $(YOUR_HW_PLATFORM)
+PRODUCT_USES_QCOM_HARDWARE := true
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/media
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+$(LOCAL_PATH) \
+hardware/qcom-caf/$(YOUR_HW_PLATFORM)
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService
