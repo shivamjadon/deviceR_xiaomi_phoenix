@@ -6,4 +6,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.btstack.enable.twsplus=true \
     persist.vendor.btstack.enable.twsplussho=true \
     ro.bluetooth.library_name=libbluetooth_qti.so \
-    vendor.bluetooth.soc=cherokee
+    vendor.bluetooth.soc=cherokee \
+    qcom.hw.aac.encoder=true
+
+# WFD props
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
+
+# system props for the cne module
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.cne.feature=1
+
+#Property to enable Codec2 for audio and OMX for Video
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.ccodec=1
+
+
