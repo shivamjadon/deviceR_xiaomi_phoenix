@@ -64,11 +64,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     windowsmgr.max_events_per_sec=90 \
     persist.cust.tel.eons=1
 
-# Performance
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.max.fling_velocity=20000 \
-    ro.min.fling_velocity=18000
-
 # Makes streaming videos stream faster
 PRODUCT_PRODUCT_PROPERTIES += \
     media.stagefright.enable-player=true \
