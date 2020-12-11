@@ -76,6 +76,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     BluetoothQti
 
+# CustomDoze
+PRODUCT_PACKAGES += \
+    CustomDoze
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap
