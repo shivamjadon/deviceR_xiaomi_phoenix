@@ -36,3 +36,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Priv-app permission
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
+
+# Power-saving props
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.use_data_netmgrd=true \
+    ro.vold.umsdirtyratio=20 \
+    ro.ril.disable.power.collapse=0 \
+    power.saving.mode=1 \
+    pm.sleep_mode=1
