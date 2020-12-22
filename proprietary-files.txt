@@ -52,6 +52,7 @@ lib/libcameraservice.so
 lib/libcom.xiaomi.camera.algojni.so
 lib/libcom.xiaomi.camera.mianodejni.so
 lib/libcom.xiaomi.camera.requestutil.so
+lib/vendor.lineage.camera.motor@1.0
 system_ext/lib/vendor.qti.hardware.camera.device@3.5.so
 system_ext/lib/vendor.qti.hardware.camera.device@2.0.so
 system_ext/lib/vendor.qti.hardware.camera.device@1.0.so
