@@ -61,26 +61,28 @@ system_ext/lib/libimscamera_jni.so
 
 # DPM
 framework/tcmclient.jar
-product/bin/dpmd
-product/etc/dpm/dpm.conf
-product/etc/init/dpmd.rc
-product/etc/permissions/com.qti.dpmframework.xml
-product/etc/permissions/dpmapi.xml
-product/framework/com.qti.dpmframework.jar
-product/framework/dpmapi.jar
-product/lib/com.qualcomm.qti.dpm.api@1.0.so
-product/lib/libdpmctmgr.so
-product/lib/libdpmfdmgr.so
-product/lib/libdpmframework.so
-product/lib/libdpmtcm.so
-product/lib64/com.qualcomm.qti.dpm.api@1.0.so
-product/lib64/libdpmctmgr.so
-product/lib64/libdpmfdmgr.so
-product/lib64/libdpmtcm.so
--product/priv-app/dpmserviceapp/dpmserviceapp.apk
-
-# DPM - from oneplus8 - qssi-user-11-RP1A.201005.001-2009051300-release-keys
-system_ext/lib64/libdpmframework.so|67ebd736333ae7158632735e3db06a4f9664f6a6
+system_ext/bin/dpmd
+system_ext/etc/dpm/dpm.conf
+system_ext/etc/init/dpmd.rc
+system_ext/etc/permissions/com.qti.dpmframework.xml
+system_ext/etc/permissions/dpmapi.xml
+system_ext/framework/com.qti.dpmframework.jar
+system_ext/framework/dpmapi.jar
+system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so
+system_ext/lib/libdiag_system.so
+system_ext/lib/vendor.qti.diaghal@1.0.so
+system_ext/lib/libdpmctmgr.so
+system_ext/lib/libdpmfdmgr.so
+system_ext/lib/libdpmframework.so
+system_ext/lib/libdpmtcm.so
+system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
+system_ext/lib64/libdiag_system.so
+system_ext/lib64/vendor.qti.diaghal@1.0.so
+system_ext/lib64/libdpmfdmgr.so
+system_ext/lib64/libdpmctmgr.so
+system_ext/lib64/libdpmframework.so
+system_ext/lib64/libdpmtcm.so
+-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 
 # Bluetooth (aptX) - redfin-user-11-RD1A.201105.003.A1-6886512-release-keys
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
