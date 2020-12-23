@@ -7,10 +7,10 @@
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
 # Inherit some common evolution stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/kangos/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_phoenix
+PRODUCT_NAME := kangos_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30
@@ -21,10 +21,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 
-# Maintainer Properties
-EVO_BUILD_TYPE := OFFICIAL
-EVO_DONATE_URL := https://www.paypal.me/chiru2000
-EVO_MAINTAINER := CHIRANTH CHIRU
+
+
+
+
 
 BUILD_FINGERPRINT := POCO/phoenixin/phoenixin:10/QKQ1.190825.002/V12.0.2.0.QGHINXM:user/release-keys
 
