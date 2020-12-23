@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/kangos_phoenix.mk
+    $(LOCAL_DIR)/lineage_phoenix.mk
 
 COMMON_LUNCH_CHOICES := \
-    kangos_phoenix-user \
-    kangos_phoenix-userdebug \
-    kangos_phoenix-eng
+    lineage_phoenix-user \
+    lineage_phoenix-userdebug \
+    lineage_phoenix-eng
